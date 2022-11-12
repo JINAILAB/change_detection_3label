@@ -7,10 +7,10 @@ class DataConfig:
         self.data_name = data_name
         if data_name == 'LEVIR':
             self.label_transform = "norm"
-            self.root_dir = '/raid/parksonice/maicon_test/'
+            self.root_dir = '/raid/parksonice/change_test/'
         elif data_name == 'DSIFN':
             self.label_transform = "norm"
-            self.root_dir = '/media/lidan/ssd2/CDData/DSIFN_256/'
+            self.root_dir = '/raid/parksonice/change_final'
         elif data_name == 'WHU':
             self.label_transform = "norm"
             self.root_dir = '/media/lidan/ssd2/CDData/WHU-CD-256/'
