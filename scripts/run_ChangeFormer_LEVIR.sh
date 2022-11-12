@@ -4,8 +4,8 @@
 gpus=0,1
 
 #Set paths
-checkpoint_root=/home/jhsong/ChangeFormer/checkpoints
-vis_root=/home/jhsong/ChangeFormer/vis
+checkpoint_root=/raid/parksonice/change_detection_3label/checkpoints
+vis_root=/raid/parksonice/change_detection_3label/vis
 data_name=LEVIR
 
 
@@ -25,7 +25,7 @@ multi_scale_infer=False
 shuffle_AB=False
 
 #Initializing from pretrained weights
-pretrain=pretrained_changeformer/pretrained_changeformer.pt
+pretrain=/raid/parksonice/best_ckpt.pt
 n_class=4
 
 
