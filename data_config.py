@@ -7,7 +7,7 @@ class DataConfig:
         self.data_name = data_name
         if data_name == 'LEVIR':
             self.label_transform = "norm"
-            self.root_dir = '/raid/parksonice/change_test/'
+            self.root_dir = '/raid/parksonice/change/'
         elif data_name == 'DSIFN':
             self.label_transform = "norm"
             self.root_dir = '/raid/parksonice/change_final'
