@@ -14,7 +14,7 @@ def cross_entropy(input, target, weight=None, reduction='mean',ignore_index=255)
     target = target.long()	
     print(input.shape)
     print(target.shape)
-    if target.dim() == 4:
+    if target.dim() == 5:
         target = torch.squeeze(target, dim=1)
     if input.shape[-1] != target.shape[-1]:
         input = F.interpolate(input, size=target.shape[1:], mode='bilinear',align_corners=True)
