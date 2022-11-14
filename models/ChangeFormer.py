@@ -1657,7 +1657,7 @@ class ChangeFormerV5(nn.Module):
 # ChangeFormerV6:
 class ChangeFormerV6(nn.Module):
 
-    def __init__(self, input_nc=3, output_nc=2, decoder_softmax=False, embed_dim=256):
+    def __init__(self, input_nc=3, output_nc=4, decoder_softmax=False, embed_dim=256):
         super(ChangeFormerV6, self).__init__()
         #Transformer Encoder
         self.embed_dims = [64, 128, 320, 512]
