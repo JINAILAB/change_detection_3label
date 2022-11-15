@@ -299,7 +299,6 @@ class CDTrainer():
                 if pred.size(2) != gt.size(2):
                     temp_loss = temp_loss + self.weights[i]*self._pxl_loss(pred, F.interpolate(gt, size=pred.size(2), mode="nearest"))
                 else:
-                    print(pred.size, gt.size)
                     temp_loss = temp_loss + self.weights[i]*self._pxl_loss(pred, gt)
                 i+=1
             self.G_loss = temp_loss
