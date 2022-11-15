@@ -11,7 +11,7 @@ data_name=LEVIR
 
 img_size=256    
 batch_size=32
-lr=0.0002     
+lr=0.00013
 max_epochs=100
 embed_dim=256
 
